@@ -1,13 +1,14 @@
 :root {
-  --link-blue: #ffffff;
+  --link-color: #ffffff;
 }
+
 .global-header {
-  background: #3d3d3d;
+  background: #363636;
 }
 
 .global-header .main-navigation a,
 .global-header .main-navigation a:visited {
-  color: var(--link-blue);
+  color: var(--link-color);
 }
 
 .global-header .main-navigation a.active {
