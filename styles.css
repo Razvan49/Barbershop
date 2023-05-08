@@ -7,6 +7,8 @@
   --link-active-color: #ff6c00;
   --link-social-color: #303030;
   --link-social--hover-color: #ff6c00;
+  --social-icon-color: #303030;
+  --social-icon--hover-color: #ff6c00;
   --text-font-family: "Open Sans", sans-serif;
   --heading-font-family: "Raleway", sans-serif;
   --text-color: #9da4bd;
@@ -384,6 +386,26 @@ a.social-link:focus {
   color: var(--text-active);
 }
 
+.barbers-list .icons-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  color: var(--social-icon-color);
+}
+
+.barbers-list .icons-list .icon:hover,
+.barbers-list .icons-list .icon:focus {
+  color: var(--social-icon--hover-color);
+}
+
+.icons-list .icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+/* Prices */
 .prices-section .button {
   margin-top: 50px;
 }
@@ -478,6 +500,14 @@ a.social-link:focus {
   gap: 20px;
   display: flex;
   font-style: normal;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contacts-address .contact-address-item:hover,
+.contacts-address .contact-address-item:focus {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .working-hours {
@@ -490,4 +520,11 @@ a.social-link:focus {
 
 .contact-section {
   background: url("./images/contact-section-bg.webp") #191c26;
+}
+
+.icons-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
